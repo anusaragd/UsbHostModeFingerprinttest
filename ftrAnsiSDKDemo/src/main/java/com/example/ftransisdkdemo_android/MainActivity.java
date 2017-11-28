@@ -609,13 +609,13 @@ public class MainActivity extends Activity {
 
                 dev_open = true;
 
-                //---------
-                flag = 0;
-                mask = devScan.FTR_OPTIONS_INVERT_IMAGE;
-                if (!devScan.SetOptions(mask, flag))
-                    mHandler.obtainMessage(MESSAGE_SHOW_MSG, -1, -1,
-                            devScan.GetErrorMessage()).sendToTarget();
-                //---------
+//                //---------
+//                flag = 0;
+//                mask = devScan.FTR_OPTIONS_INVERT_IMAGE;
+//                if (!devScan.SetOptions(mask, flag))
+//                    mHandler.obtainMessage(MESSAGE_SHOW_MSG, -1, -1,
+//                            devScan.GetErrorMessage()).sendToTarget();
+//                //---------
 
                 if (!ansi_lib.FillImageSize()) {
                     mHandler.obtainMessage(MESSAGE_SHOW_ERROR_MSG, -1, -1, ansi_lib.GetErrorMessage()).sendToTarget();
